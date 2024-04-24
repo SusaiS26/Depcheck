@@ -8,6 +8,7 @@ import Table from 'react-bootstrap/Table';
 
 function App() {
   const [cname, setCName] = useState("");
+  console.log("12345", cname);
   const [cnameError, setCNameError] = useState("");
   const [department, setDepartment] = useState("");
   const [departmentError, setDepartmentError] = useState("");
@@ -124,7 +125,17 @@ function App() {
   const onchangevalnew = (e) => {
     setNewvalues(e.target.value)
   }
-  
+
+  const cNameClickVal = (e) => {
+    setCName(e.target.value)
+    if (e.target.value === "") {
+      setCNameError("Please Enter Name")
+    }
+    else {
+      setCNameError("")
+    }
+  }
+
   return (
     <div >
       <div className="heightpic" id='myDivtwo'>
@@ -150,7 +161,7 @@ function App() {
             </div>
             <div className="col-6">
               <div>
-                <input type="text" className='form-control' ></input>
+                <input type="text" className='form-control' value={cname} onChange={cNameClickVal}></input>
 
               </div>
             </div>
