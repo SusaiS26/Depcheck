@@ -126,15 +126,15 @@ function App() {
     setNewvalues(e.target.value)
   }
 
-  const cNameClickVal = (e) => {
-    setCName(e.target.value)
-    if (e.target.value === "") {
-      setCNameError("Please Enter Name")
-    }
-    else {
-      setCNameError("")
-    }
-  }
+  // const cNameClickVal = (e) => {
+  //   setCName(e.target.value)
+  //   if (e.target.value === "") {
+  //     setCNameError("Please Enter Name")
+  //   }
+  //   else {
+  //     setCNameError("")
+  //   }
+  // }
 
   return (
     <div >
@@ -161,7 +161,7 @@ function App() {
             </div>
             <div className="col-6">
               <div>
-                <input type="text" className='form-control' value={cname} onChange={cNameClickVal}></input>
+                <input type="text" className='form-control'></input>
 
               </div>
             </div>
