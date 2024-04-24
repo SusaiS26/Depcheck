@@ -36,3 +36,133 @@
     transform: rotate(360deg);
   }
 }
+
+.company-container {
+  width: 75%;
+  margin: 0 auto;
+  border: 2px solid white;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  background-color: indigo;
+  color: white;
+}
+
+#myDivone {
+  background-image: url('./anilady.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#myDivtwo {
+  background-image: url('./anilady.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heightpic {
+  height: 1080px;
+}
+
+.company-container .student-color {
+  background-color: cornsilk;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  font-weight: 500;
+}
+
+.company-container .staddmission {
+  background-color: cornsilk;
+  border-radius: 25px;
+  padding: 5px;
+  color: black;
+  font-weight: 500;
+  width: 5;
+  width: 90%;
+  margin: auto;
+}
+
+.company-container .dobaligment {
+  margin-top: 15px;
+}
+
+
+.company-container .txtcomp {
+  text-align: center;
+  margin-top: 25px
+}
+
+.txtname {
+  margin-left: 20px;
+  margin-bottom: 2px;
+}
+
+.btn-colour .txtsave {
+  margin-bottom: 10px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 700;
+  height: 50px;
+  width: 20%;
+}
+
+.company-formtile {
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.formcontainer {
+  width: 80;
+  margin: auto 0;
+}
+
+.full-container .error-colour {
+  color: aquamarine;
+  font-weight: bold;
+}
+
+.save-btn-cent {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.navigate {
+  width: 100%;
+  height: 75px;
+  background-color: blue;
+  position: sticky;
+  top: 0px;
+}
+
+.navigate ul li {
+  padding: 10px;
+  line-height: 50px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navigate .arefer {
+  list-style: none;
+  color: white;
+  line-height: 50px;
+}
+
+.arefer {
+  text-decoration: none;
+  border: none;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: darkorange;
+}
+
+.schoolname {
+  text-align: center;
+  padding-top: 21px;
+}
