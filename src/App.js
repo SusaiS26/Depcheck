@@ -61,85 +61,85 @@ function App() {
   console.log("AAA", companyval);
 
 
-  const cNameClickVal = (e) => {
-    setCName(e.target.value)
-    if (e.target.value === "") {
-      setCNameError("Please Enter Name")
-    }
-    else {
-      setCNameError("")
-    }
-  }
-  const cDepartment = (e) => {
-    setDepartment(e.target.value)
-    if (e.target.value === "") {
-      setDepartmentError("Please Enter Father's Name")
-    }
-    else {
-      setDepartmentError("")
-    }
-  }
-  const cAgeVal = (e) => {
-    setAgeVal(e.target.value)
-    if (e.target.value === "") {
-      setAgeValError("Please Enter DOB:")
-    }
-    else {
-      setAgeValError("")
-    }
-  }
-  const cMarkVal = (e) => {
-    setMarkVal(e.target.value)
-    if (e.target.value === "") {
-      setMarkValError("Please Enter Class & Section:")
-    }
-    else {
-      setMarkValError("");
-    }
-  }
-   const validform = () => {
-    let Valid = true;
-    if (cname === "") {
-      setCNameError("Please Enter Name");
-      Valid = false;
-    }
-    else {
-      setCNameError("");
-    }
-    if (department === "") {
-      setDepartmentError("Please Enter Father's Name");
-      Valid = false;
-    }
-    else {
-      setDepartmentError("");
-    }
-    if (ageval === "") {
-      // || isNaN(ageval) || ageval < 1 || ageval > 100
-      setAgeValError("Please Enter DOB");
-      Valid = false;
-    }
-    else {
-      setAgeValError("");
-    }
-    if (filename === "") {
-      // setResultText(res.data.message)
-      setPhotoError("Please upload the image");
-      Valid = false;
-    }
-    else {
-      setPhotoError("");
-    }
+  // const cNameClickVal = (e) => {
+  //   setCName(e.target.value)
+  //   if (e.target.value === "") {
+  //     setCNameError("Please Enter Name")
+  //   }
+  //   else {
+  //     setCNameError("")
+  //   }
+  // }
+  // const cDepartment = (e) => {
+  //   setDepartment(e.target.value)
+  //   if (e.target.value === "") {
+  //     setDepartmentError("Please Enter Father's Name")
+  //   }
+  //   else {
+  //     setDepartmentError("")
+  //   }
+  // }
+  // const cAgeVal = (e) => {
+  //   setAgeVal(e.target.value)
+  //   if (e.target.value === "") {
+  //     setAgeValError("Please Enter DOB:")
+  //   }
+  //   else {
+  //     setAgeValError("")
+  //   }
+  // }
+  // const cMarkVal = (e) => {
+  //   setMarkVal(e.target.value)
+  //   if (e.target.value === "") {
+  //     setMarkValError("Please Enter Class & Section:")
+  //   }
+  //   else {
+  //     setMarkValError("");
+  //   }
+  // }
+  //  const validform = () => {
+  //   let Valid = true;
+  //   if (cname === "") {
+  //     setCNameError("Please Enter Name");
+  //     Valid = false;
+  //   }
+  //   else {
+  //     setCNameError("");
+  //   }
+  //   if (department === "") {
+  //     setDepartmentError("Please Enter Father's Name");
+  //     Valid = false;
+  //   }
+  //   else {
+  //     setDepartmentError("");
+  //   }
+  //   if (ageval === "") {
+  //     // || isNaN(ageval) || ageval < 1 || ageval > 100
+  //     setAgeValError("Please Enter DOB");
+  //     Valid = false;
+  //   }
+  //   else {
+  //     setAgeValError("");
+  //   }
+  //   if (filename === "") {
+  //     // setResultText(res.data.message)
+  //     setPhotoError("Please upload the image");
+  //     Valid = false;
+  //   }
+  //   else {
+  //     setPhotoError("");
+  //   }
 
-    if (markVal === "") {
-      setMarkValError("Please Enter Class & Section:");
-      Valid = false;
-    }
-    else {
-      setMarkValError("");
-    }
-    return Valid;
+  //   if (markVal === "") {
+  //     setMarkValError("Please Enter Class & Section:");
+  //     Valid = false;
+  //   }
+  //   else {
+  //     setMarkValError("");
+  //   }
+  //   return Valid;
 
-  }
+  // }
 
   const [newvalues, setNewvalues] = useState("")
 
@@ -164,7 +164,7 @@ function App() {
             </ul>
           </div>
 
-          <div className="company-container" >
+          {/* <div className="company-container" >
 
             <div className="row">
               <h1 className="txtcomp staddmission">Student Admission Form:-</h1>
@@ -206,13 +206,7 @@ function App() {
                 <div className="col-6">
                   <div>
                     <input type="file" accept="image/*" ></input>
-                    {/* <input type="file" className='' accept=".jpeg, .png, .jpg, .pdf" onChange={(e) => onChangeInputVal(e, 'logo1')} /> */}
-                    {/* {base64Data != null && (
-                                    <img
-                                        style={{ width: '120px', height: '150px', float: 'inline-end', padding: '5px', paddingleft: '5px' }}
-                                        src={`data:image;base64,${base64Data}`}
-                                    />
-                                )} */}
+                   
                     <p className="error-colour">{photoerror}</p>
                     <p>{resulttext} </p>
 
@@ -242,11 +236,7 @@ function App() {
                   <input type="text" className='form-control' value={markVal} onChange={cMarkVal}></input>
                   <p className="error-colour"> {markValError}</p>
                 </div>
-                {/* <div className="row ">
-                            <div className="col-4">
-
-                            </div>
-                        </div> */}
+               
               </div>
 
             </div>
@@ -302,7 +292,7 @@ function App() {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 
