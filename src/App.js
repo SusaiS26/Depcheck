@@ -34,30 +34,8 @@ function App() {
 
   console.log("images", CompanyLogoUpload);
 
-  // const uploadImage = (e, flag) => {
 
-  //     let file = e.target.files[0];
-  //     if (file) {
-  //         const reader = new FileReader();
-  //         reader.onload = handleReaderLoaded.bind(this, flag);
-  //         reader.readAsBinaryString(file);
-  //     }
-  // };
 
-  // const handleReaderLoaded = (flag, e) => {
-  //     console.log('file uploaded 2: ', e);
-  //     let binaryString = e.target.result;
-  //     console.log('bin', binaryString);
-  //     if (flag == 'logo1') {
-  //         console.log('$%$%', flag);
-  //         setCompanyLogoUpload({
-  //             base64Data: btoa(binaryString),
-  //         });
-  //     }
-  // };
-  // const { base64Data } = CompanyLogoUpload;
-
-  
   console.log("AAA", companyval);
 
 
@@ -146,6 +124,15 @@ function App() {
   const onchangevalnew = (e) => {
     setNewvalues(e.target.value)
   }
+  const cNameClickVal = (e) => {
+    setCName(e.target.value)
+    if (e.target.value === "") {
+      setCNameError("Please Enter Name")
+    }
+    else {
+      setCNameError("")
+    }
+  }
 
   return (
     <div >
@@ -162,6 +149,20 @@ function App() {
               <li><a className="arefer" href="/Susai"> Staff</a></li>
               <li><a className="arefer" href="/Susai"> Management</a></li>
             </ul>
+          </div>
+
+          <div className="row" style={{ marginTop: '50px' }}>
+            <div className="col-4">
+              <div className="company-formtile">
+                <span className="student-color">Student Name:</span>
+              </div>
+            </div>
+            <div className="col-6">
+              <div>
+                <input type="text" className='form-control' value={cname} onChange={cNameClickVal}></input>
+
+              </div>
+            </div>
           </div>
 
           {/* <div className="company-container" >
