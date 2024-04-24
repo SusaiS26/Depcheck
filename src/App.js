@@ -8,7 +8,7 @@ import Table from 'react-bootstrap/Table';
 
 function App() {
   const [cname, setCName] = useState("");
-  console.log("12345", cname);
+  console.log("1234567890", cname);
   const [cnameError, setCNameError] = useState("");
   const [department, setDepartment] = useState("");
   const [departmentError, setDepartmentError] = useState("");
