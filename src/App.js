@@ -34,9 +34,6 @@ function App() {
   const [CompanyLogoUpload, setCompanyLogoUpload] = useState('');
 
   console.log("images", CompanyLogoUpload);
-
-
-
   console.log("AAA", companyval);
 
 
@@ -120,21 +117,12 @@ function App() {
 
   // }
 
-  const [newvalues, setNewvalues] = useState("")
-
-  const onchangevalnew = (e) => {
-    setNewvalues(e.target.value)
+  const cNameClickVal = (e) => {
+    setCName(e.target.value)
+    if (e.target.value === "") {
+      setCNameError("Please Enter Name")
+    }
   }
-
-  // const cNameClickVal = (e) => {
-  //   setCName(e.target.value)
-  //   if (e.target.value === "") {
-  //     setCNameError("Please Enter Name")
-  //   }
-  //   else {
-  //     setCNameError("")
-  //   }
-  // }
 
   return (
     <div >
@@ -158,17 +146,16 @@ function App() {
               <div className="company-formtile">
                 <span className="student-color">Student Name:</span>
               </div>
+              <h1 style={{ backgroundColor: 'red' }} >{cname}</h1>
             </div>
             <div className="col-6">
               <div>
-                <input type="text" className='form-control'></input>
-
+                <input type="text" className='form-control' value={cname} onChange={cNameClickVal}></input>
               </div>
             </div>
           </div>
 
-          {/* <div className="company-container" >
-
+          {/* <div className="company-container">
             <div className="row">
               <h1 className="txtcomp staddmission">Student Admission Form:-</h1>
             </div>
